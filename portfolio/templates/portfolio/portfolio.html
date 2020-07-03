@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Portfolio {% endblock %}
+{% block meta_description %} Emmanuel's Portfolio {% endblock %}
+{% block content %}
+
+<!-- bradcam_area  -->
+<div class="bradcam_area bradcam_bg_1">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12">
+        <div class="bradcam_text text-center">
+          <h3>Portfolio</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /bradcam_area  -->
+
+
+
+
+
+
+
+
+
+
+<section>
+
+  <div class="hero-full-wrapper">
+    <div class="grid">
+    {% for project in projects %}
+      <div class="gutter-sizer"></div>
+      <div class="grid-sizer"></div>
+
+      <div class="grid-item">
+        <img class="img-responsive" alt="" src="{{ project.image.url }}">
+        <a href="{% url 'project_detail' project.id %}" class="project-description">
+          <div class="project-text-holder">
+            <div class="project-text-inner">
+              <h3>{{ project.title }}</h3>
+              <p>Discover more</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+</section>
+{% endblock %}

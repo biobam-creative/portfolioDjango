@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} About us {% endblock %}
+{% block meta_description %} this is information about Afolabi Emmanuel Abiodun {% endblock %}
+{% block content %}
+<!-- bradcam_area  -->
+<div class="bradcam_area bradcam_bg_1">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="bradcam_text text-center">
+                    <h3>About Me</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /bradcam_area  -->
+
+<div class="video_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="video_wrap">
+                    <div class="thumb">
+                        <img src="{% static 'portfolio/img/video/video_bg.png' %}" alt="">
+                        <div class="video_icon">
+                            <a class="popup-video" href="https://www.youtube.com/watch?v=1Prw90PRiJE"> <i
+                                    class="fa fa-play"></i> </a>
+                        </div>
+                    </div>
+                    <div class="video_text text-center">
+                        <p>Hello, I am Emmanuel. I am designer and a web developer <br>
+                            I would like to share with you some of <br>
+                            my ideas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- about_me  -->
+<div class="about_me">
+    <div class="about_large_title d-none d-lg-block">
+        About
+    </div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xl-6 col-md-6">
+                <div class="about_e_details">
+                    <h3>About me</h3>
+                    <p>I’m Afolabi Emmanuel Abiodun, a freelance creative designer, web
+                        developer and a 3d artist, I love to create stuffs for both fun and money. I
+                        enjoy achieving things nerdily and also proffesionally. <br><br>
+
+                        Lately I’ve been doing some website development. Using django and flask.
+                        <br>
+                        <br>
+
+                        I live in Ogbomoso, Nigeria and i’m on the lookout for interesting projects and nice people
+                        doing amazing stuff. Are you looking for a designer, 3d artist or web developer? Don’t
+                        hesitate to call or send mail. </p>
+                    </p>
+                    <div class="download_cv">
+                        <a class="boxed-btn3" href="{% static 'portfolio/cv_1.pdf' %}">Download CV</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-md-6">
+                <div class="about_img">
+                    <div class="color_pattern d-none d-lg-block">
+                        <img src="{% static 'portfolio/img/about/color_grid.png' %}" alt="">
+                    </div>
+                    <div class="my_Pic">
+                        <img src="{% static 'portfolio/img/about/about1.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ about_me  -->
+
+<div class="counter_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 col-md-4">
+                <div class="single_counter text-center">
+                    <h3>
+                        <span class="counter">520 </span><span>+</span>
+                    </h3>
+                    <p>Total Projects</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-4">
+                <div class="single_counter text-center">
+                    <h3>
+                        <span class="counter">244 </span>
+                    </h3>
+                    <p>On Going Projects</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-4">
+                <div class="single_counter text-center">
+                    <h3>
+                        <span class="counter">95 </span> <span>%</span>
+                    </h3>
+                    <p>Job Success</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

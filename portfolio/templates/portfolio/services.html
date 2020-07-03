@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Service {% endblock %}
+{% block meta_description %} Services offered by Emmanuel {% endblock %}
+{% block content %}
+
+<!-- bradcam_area  -->
+<div class="bradcam_area bradcam_bg_1">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="bradcam_text text-center">
+                    <h3>Services</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /bradcam_area  -->
+<!-- service_area  -->
+<div class="service_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="section_title text-center mb-65">
+                    <span>Service Provided</span>
+                    {{ name }}
+                    <h3>Build brands campaigns <br>
+                        & digital projects</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-4 col-md-4">
+                <div class="single_service text-center">
+                    <div class="icon">
+                        <img src="{% static 'portfolio/img/svg_icon/1.svg' %}" alt="">
+                    </div>
+                    <h3>Graphic design</h3>
+                    <p>Let me make your graphics for you, are you on a low budget? Send a mail to me and let's talk.</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-4">
+                <div class="single_service text-center">
+                    <div class="icon">
+                        <img src="{% static 'portfolio/img/svg_icon/2.svg' %}" alt="">
+                    </div>
+                    <h3>Web design</h3>
+                    <p>Let me make your website for you, are you on a low budget? Send a mail to me and let's talk.</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-4">
+                <div class="single_service text-center">
+                    <div class="icon">
+                        <img src="{% static 'portfolio/img/svg_icon/3.svg' %}" alt="">
+                    </div>
+                    <h3>3d Design</h3>
+                    <p>Let me make your 3d graphics for you, are you on a low budget? Send a mail to me and let's talk.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ service_area  -->
+
+
+
+
+
+<div class="project_text text-center">
+
+    <a class="boxed-btn3" href="{% url 'contact' %}">Start Talking</a>
+</div>
+
+<br>
+<br>
+<br>
+
+
+{% endblock %}

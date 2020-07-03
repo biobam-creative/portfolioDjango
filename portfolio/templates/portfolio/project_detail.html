@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Projects {% endblock %}
+{% block meta_description %} Blogs by Emmanuel {% endblock %}
+{% block content %}
+
+
+
+<!-- bradcam_area  -->
+<div class="bradcam_area bradcam_bg_1">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12">
+        <div class="bradcam_text text-center">
+          <h3>Project Detail</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main class="" id="main-collapse">
+
+
+<div class="row">
+  <div class="col-xs-12 col-md-8">
+
+    <div class="section-container-spacer">
+        <h1>{{ project.title }}</h1>
+        <p style="font-size:18px;">{{ project.description }}</p>
+    </div>
+
+    <div class="section-container-spacer">
+      <p><img class="img-responsive" alt="" src="{{ project.image.url }}"></p>
+      <div class="row">
+          <div class="col-xs-12 col-md-6">
+              <p><img class="img-responsive" alt="" src="{{ project.mockup1.url }}"></p>
+          </div>
+          <div class="col-xs-12 col-md-6">
+              <p><img class="img-responsive" alt="" src="{{ project.mockup2.url }}"></p>
+          </div>
+      </div>
+    
+  
+</div>
+    
+
+
+</main>
+
+
+
+
+{% endblock %}
