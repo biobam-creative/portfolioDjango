@@ -27,7 +27,6 @@ urlpatterns = [
     path('services', views.services, name='services'),
     path('contact', views.contact, name='contact'),
     path('portfolio', views.portfolio, name='portfolio'),
-    path('newsletter/', include('newsletter.urls')),
     path('<int:project_id>/', views.project_detail, name='project_detail'),
 
 
