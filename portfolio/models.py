@@ -7,7 +7,6 @@ class Project(models.Model):
     image = models.ImageField(upload_to='portfolio/images/')
     mockup1 = models.ImageField(upload_to='portfolio/images/')
     mockup2 = models.ImageField(upload_to='portfolio/images/')
-    mockup3 = models.ImageField(upload_to='portfolio/images/')
 
     url = models.URLField(blank=True)
 
